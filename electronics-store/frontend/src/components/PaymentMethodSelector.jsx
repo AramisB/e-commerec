@@ -13,8 +13,8 @@ const PaymentMethodSelector = ({ selectedMethod, onChange }) => {
             />
             <span>Credit/Debit Card</span>
             <div className="payment-icons">
-              <img src="/icons/visa.svg" alt="Visa" />
-              <img src="/icons/mastercard.svg" alt="Mastercard" />
+              <img src="/payment-icons/visa.png" alt="Visa" />
+              <img src="/payment-icons/mastercard.png" alt="Mastercard" />
             </div>
           </label>
   
@@ -27,7 +27,7 @@ const PaymentMethodSelector = ({ selectedMethod, onChange }) => {
               onChange={() => onChange('paypal')}
             />
             <span>PayPal</span>
-            <img src="/icons/paypal.svg" alt="PayPal" className="paypal-icon" />
+            <img src="/payment-icons/paypal.png" alt="PayPal" className="paypal-icon" />
           </label>
   
           <label className={`payment-method-option ${selectedMethod === 'mpesa' ? 'active' : ''}`}>
@@ -39,7 +39,7 @@ const PaymentMethodSelector = ({ selectedMethod, onChange }) => {
               onChange={() => onChange('mpesa')}
             />
             <span>M-Pesa</span>
-            <img src="/icons/mpesa.svg" alt="M-Pesa" className="mpesa-icon" />
+            <img src="/payment-icons/mpesa.png" alt="M-Pesa" className="mpesa-icon" />
           </label>
         </div>
       </div>
@@ -47,4 +47,3 @@ const PaymentMethodSelector = ({ selectedMethod, onChange }) => {
   };
   
   export default PaymentMethodSelector;
-  
