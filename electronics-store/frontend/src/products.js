@@ -5,7 +5,7 @@ const products = [
     name: 'Smartphone X',
     price: 799,
     description: 'Latest smartphone with advanced camera features',
-    image: 'https://via.placeholder.com/300x200?text=Smartphone+X',
+    image: './phones/phoneflip1.avif',
     category: 'phones'
   },
   {
@@ -13,15 +13,15 @@ const products = [
     name: 'Smartphone Z',
     price: 699,
     description: 'Affordable smartphone with great performance',
-    image: 'https://via.placeholder.com/300x200?text=Smartphone+Z',
+    image: './phones/phoneflip2.avif',
     category: 'phones'
   },
   {
     id: 3,
-    name: 'Phone 12 Pro',
+    name: 'iPhone 14 Pro',
     price: 999,
-    description: 'iPhone 12 Pro with 5G and Pro camera system',
-    image: 'https://via.placeholder.com/300x200?text=Phone+12+Pro',
+    description: 'iPhone 14 Pro with 5G and Pro camera system',
+    image: './phones/iphone14.jpeg',
     category: 'phones'
   },
   {
@@ -29,7 +29,7 @@ const products = [
     name: 'Galaxy S21',
     price: 899,
     description: 'Samsung Galaxy S21 with high-end features',
-    image: 'https://via.placeholder.com/300x200?text=Galaxy+S21',
+    image: './phones/Galaxys21.jpg',
     category: 'phones'
   },
   {
@@ -37,7 +37,7 @@ const products = [
     name: 'OnePlus 9',
     price: 749,
     description: 'OnePlus 9 with 120Hz Fluid AMOLED display',
-    image: 'https://via.placeholder.com/300x200?text=OnePlus+9',
+    image: './phones/oneplus9.png',
     category: 'phones'
   },
 
