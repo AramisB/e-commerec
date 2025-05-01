@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --tech-blue: #2563eb;
+    --cyber-purple: #7c3aed;
+    --holographic-teal: #06b6d4;
+    --neon-green: #22c55e;
+    
+    /* Utility Colors */
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --info: #3b82f6;
+    
+    /* Neutrals */
+    --carbon-black: #171717;
+    --circuit-gray: #404040;
+    --silver: #e5e7eb;
+    --platinum: #f9fafb;
+  }
+}
+
+@layer components {
+  .tech-card {
+    @apply bg-white border border-silver rounded-lg shadow-sm hover:shadow-md transition-all duration-300;
+  }
+  
+  .glow-effect {
+    @apply relative before:absolute before:inset-0 before:bg-gradient-to-br before:from-tech-blue/10 before:to-cyber-purple/10 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300;
+  }
+}

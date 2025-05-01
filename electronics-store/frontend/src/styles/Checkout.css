@@ -1,0 +1,82 @@
+.checkout-page {
+    @apply container mx-auto px-4 py-8 max-w-6xl;
+}
+
+.checkout-header {
+    @apply text-3xl font-bold mb-8 text-[var(--carbon-black)];
+}
+
+.checkout-layout {
+    @apply flex flex-col lg:flex-row gap-8;
+}
+
+.payment-section {
+    @apply lg:w-2/3 bg-white p-6 rounded-lg shadow-sm border border-[var(--silver)];
+}
+/* Payment Method Selector */
+.payment-method-selector {
+    @apply mb-8;
+  }
+  
+  .payment-method-title {
+    @apply text-lg font-semibold mb-4 text-[var(--carbon-black)];
+  }
+  
+  .payment-method-options {
+    @apply space-y-3;
+  }
+  
+  .payment-method-option {
+    @apply flex items-center justify-between p-4 border rounded-lg cursor-pointer transition-colors;
+  }
+  
+  .payment-method-option.active {
+    @apply border-[var(--tech-blue)] bg-[var(--tech-blue)/10];
+  }
+  
+  .payment-method-option input {
+    @apply mr-3;
+  }
+  
+  .payment-icons {
+    @apply flex gap-2;
+  }
+  
+  .payment-icons img, .paypal-icon, .mpesa-icon {
+    @apply h-6;
+  }
+  
+  /* PayPal Container */
+  .paypal-container {
+    @apply mt-6;
+  }
+  
+  /* M-Pesa Form */
+  .mpesa-form {
+    @apply space-y-4 mt-6;
+  }
+  
+  .mpesa-form .form-group {
+    @apply space-y-2;
+  }
+  
+  .mpesa-form label {
+    @apply block font-medium text-[var(--carbon-black)];
+  }
+  
+  .mpesa-form input {
+    @apply w-full p-3 border border-[var(--silver)] rounded-lg focus:border-[var(--tech-blue)];
+  }
+  
+  .mpesa-instructions {
+    @apply text-sm text-[var(--circuit-gray)] italic;
+  }
+  
+  .mpesa-form button {
+    @apply w-full bg-[var(--success)] hover:bg-green-700 text-white py-3 rounded-lg font-medium transition-colors disabled:opacity-70;
+  }
+  
+  .error-message {
+    @apply text-[var(--danger)] text-sm;
+  }
+  

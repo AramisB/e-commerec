@@ -1,0 +1,39 @@
+/* Hero Section */
+.hero-section {
+    @apply bg-gradient-to-r from-[var(--tech-blue)] to-[var(--cyber-purple)] text-white rounded-xl p-8 mb-12 shadow-lg;
+  }
+  
+  .hero-title {
+    @apply text-4xl md:text-5xl font-bold mb-4 tracking-tight;
+  }
+  
+  .hero-subtitle {
+    @apply text-xl md:text-2xl mb-6 opacity-90;
+  }
+  
+  .hero-button {
+    @apply bg-white text-[var(--tech-blue)] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-md;
+  }
+  
+  /* Category Section */
+  .category-title {
+    @apply text-2xl font-bold mb-4 text-[var(--carbon-black)];
+  }
+  
+  .category-button {
+    @apply px-4 py-2 rounded-md font-medium transition-all duration-200 shadow-sm;
+  }
+  
+  .category-button-active {
+    @apply bg-[var(--tech-blue)] text-white ring-2 ring-offset-1 ring-[var(--tech-blue)];
+  }
+  
+  .category-button-inactive {
+    @apply bg-[var(--silver)] text-[var(--circuit-gray)] hover:bg-gray-300;
+  }
+  
+  /* Product Grid */
+  .products-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+  }
+  

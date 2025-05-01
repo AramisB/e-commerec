@@ -1,0 +1,55 @@
+.order-summary {
+    @apply lg:w-1/3 bg-white p-6 rounded-lg shadow-sm border border-[var(--silver)] h-fit sticky top-4;
+}
+
+.summary-title {
+    @apply text-xl font-semibold mb-4 text-[var(--carbon-black)];
+}
+
+.items-list {
+    @apply space-y-4 mb-6;
+}
+
+.order-item {
+    @apply flex justify-between items-center;
+}
+
+.item-info {
+    @apply flex items-center gap-2;
+}
+
+.item-name {
+    @apply text-[var(--circuit-gray)] line-clamp-1;
+}
+
+.item-quantity {
+    @apply text-sm text-[var(--circuit-gray)];
+}
+
+.item-price {
+    @apply font-medium text-[var(--carbon-black)];
+}
+
+.order-totals {
+    @apply space-y-3 border-t border-[var(--silver)] pt-4;
+}
+
+.total-row {
+    @apply flex justify-between text-[var(--circuit-gray)];
+}
+
+.grand-total {
+    @apply flex justify-between font-bold text-lg text-[var(--carbon-black)] mt-4;
+}
+
+.continue-shopping {
+    @apply block mt-6 text-center text-[var(--tech-blue)] hover:underline;
+}
+.delete-item {
+    @apply bg-transparent border-none text-red-500 text-lg cursor-pointer ml-2;
+  }
+  
+  .delete-item:hover {
+    @apply underline;
+  }
+  

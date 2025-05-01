@@ -1,0 +1,49 @@
+/* Product Card Container */
+.product-card {
+    @apply bg-white rounded-lg shadow-sm border border-[var(--silver)] overflow-hidden hover:shadow-md hover:border-[var(--tech-blue)] transition-all duration-300 h-full flex flex-col;
+}
+
+/* Image Section */
+.product-image-container {
+    @apply relative overflow-hidden;
+}
+
+.product-image {
+    @apply w-full h-48 object-contain bg-white p-4;
+}
+
+/* Content Section */
+.product-content {
+    @apply p-4 flex-grow flex flex-col;
+}
+
+.product-name {
+    @apply font-semibold text-lg mb-2 text-[var(--carbon-black)] hover:text-[var(--tech-blue)] transition-colors;
+}
+
+/* Price Section */
+.product-price-container {
+    @apply flex items-center gap-2 mb-2;
+}
+
+.product-price {
+    @apply text-[var(--tech-blue)] font-bold text-lg;
+}
+
+.product-original-price {
+    @apply text-[var(--circuit-gray)] line-through text-sm;
+}
+
+.product-description {
+    @apply text-[var(--circuit-gray)] text-sm mb-3 flex-grow;
+}
+
+/* Badge */
+.product-badge {
+    @apply mt-auto self-start bg-[var(--tech-blue)] text-white text-xs font-bold px-2 py-1 rounded;
+}
+
+/* Hover Effects */
+.product-card:hover .product-image {
+    @apply scale-105 transition-transform duration-300;
+}
